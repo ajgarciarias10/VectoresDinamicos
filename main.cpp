@@ -9,7 +9,7 @@
  * @return
  */
 int main() {
-    int limite = 10000;
+    int limite = 100000;
     //Definimos el vector dinamico con limite de elementos
     VDinamico<int> v(limite);
     int i =0;
@@ -44,7 +44,7 @@ int main() {
     */
     //endregion
     //region Imprimo el vector mayor a menor
-    for (int j = 0; j <i ; ++j) {
+    for (int j = 0; j <20 ; ++j) {
         v.ordenarMayorAmenor();
         std::cout<<v[j]<<std::endl;
     }
