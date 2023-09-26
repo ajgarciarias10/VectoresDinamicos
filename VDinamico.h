@@ -4,7 +4,8 @@
 /**
  * @file VDinamico.h
  * @date 24/09/2023
- * @author ajga0011 Abraham García Hurtado
+ * @author Antonio José Garcia Arias, ajga001@red.ujaen.es
+ * @author Abraham Garcia Hurtado, agh00040@red.ujaen.es
  * @title Vector Dinamico
  */
 #include "stdexcept"
@@ -58,7 +59,7 @@ VDinamico<T>::VDinamico(const VDinamico<T> &origen) {
         //Eliminamos el vector que teniamos
         delete[] vector;
         //Reservamos en memoria con el tamaño del que vamos a copiar
-        vector = new int[tama=origen.tama];
+        vector = new T[tama=origen.tama];
         //Le pasamos cada posicion de memoria del vector origen
         for (int i = 0; i < origen.tama ; ++i) {
             vector[i] =origen.vector[i];
@@ -151,3 +152,4 @@ void VDinamico<T>::ordenarMayorAmenor(){
 }
 
 #endif //PR1_VDINAMICO_H
+
