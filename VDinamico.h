@@ -56,8 +56,6 @@ VDinamico<T>::VDinamico(unsigned int n) {
  */
 template<class T>
 VDinamico<T>::VDinamico(const VDinamico<T> &origen) {
-        //Eliminamos el vector que teniamos
-        delete[] vector;
         //Reservamos en memoria con el tamaño del que vamos a copiar
         vector = new T[tama=origen.tama];
         //Le pasamos cada posicion de memoria del vector origen
@@ -115,6 +113,7 @@ VDinamico<T> &VDinamico<T>::operator = (const VDinamico <T> &origen){
             vector[i] = origen.vector[i];
         }
     }
+    return *this;
 }
 
 /**

@@ -17,7 +17,7 @@ int main() {
     //Definimos el vector dinamico con limite de elementos
     VDinamico<int> v(limite);
     int i =0;
-    //Inicializo un semilla aleatoria
+    // Inicializo un semilla aleatoria
     srand(time(NULL));
     try{
             while (i<limite){
@@ -38,6 +38,7 @@ int main() {
                 }
 
             }
+
             //region Imprimo el vector menor a mayor
                 v.ordenar();
                 std::cout<<std::endl<<"Vector ordenado de menor a mayor:"<<std::endl;
